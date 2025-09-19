@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @EnableScheduling
-@EnableJpaAuditing
+@EnableJpaAuditing //ControllerTest 시에 주석처리
 @SpringBootApplication
 public class MyselectshopApplication {
 
