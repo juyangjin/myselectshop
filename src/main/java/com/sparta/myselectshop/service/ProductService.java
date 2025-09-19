@@ -44,7 +44,7 @@ public class ProductService {
         int myprice = requestDto.getMyprice();
         if (myprice < MIN_MY_PRICE) {
             throw new IllegalArgumentException(
-                "유효하지 않은 관심가격입니다. 최소" + MIN_MY_PRICE + "원 이상으로 설정해주세요.");
+                "유효하지 않은 관심가격입니다. 최소 " + MIN_MY_PRICE + "원 이상으로 설정해주세요.");
         }
 
         Product product = productRepository.findById(id).orElseThrow(() ->
